@@ -8,18 +8,13 @@ public class Autoverleih
       Auto auto1;
       Auto auto2;
       Auto auto3;
-
-      // Hier soll der Programmcode stehen, mit dem neue
-      // Auto-Objekte erzeugt und den deklarierten Variablen
-      // auto1, auto2 und auto3 zugewiesen werden.
+      Kunde kunde1;
 
       auto1 = new Auto();
       auto2 = new Auto();
       auto3 = new Auto();
 
-      // Hier soll der Programmcode stehen, mit dem den
-      // Auto-Objekten die vorgesehenen Attributwerte
-      // zugewiesen werden.
+      kunde1 = new Kunde();
 
       auto1.autonummer = "HH EZ";
       auto2.autonummer = "HH AK";
@@ -32,8 +27,13 @@ public class Autoverleih
       auto1.tagespreis = 50;
       auto2.tagespreis = 40;
       auto3.tagespreis = 80;
-      
-      // Die folgende Zeile darf nicht veraendert werden:
-      Darsteller.zeige(auto1, auto2, auto3);
+
+      kunde1.name = "Schindler";
+      kunde1.stammkunde = true;
+
+
+
+  
+      Darsteller.zeige(auto1, auto2, auto3, kunde1);
    }
 }
